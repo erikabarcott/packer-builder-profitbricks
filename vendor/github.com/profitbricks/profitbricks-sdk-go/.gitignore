@@ -22,10 +22,3 @@ _testmain.go
 *.exe
 *.test
 *.prof
-
-.idea/
-/packer-builder-profitbricks
-/packer-builder-profitbricks-v1.0.0-darwin-amd64.tar.gz
-/packer-builder-profitbricks-v1.0.0-linux-amd64.tar.gz
-/packer-builder-profitbricks-v1.0.0-windows-amd64.tar.gz
-.DS_Store

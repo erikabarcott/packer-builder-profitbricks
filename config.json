@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "image": "Ubuntu-16.04",
+      "pbpassword": "password",
+      "pbusername": "username",
+      "servername": "packer",
+      "type": "profitbricks"
+    }
+  ],
+  "provisioners": [
+    {
+      "inline": [
+        "echo foo"
+      ],
+      "type": "shell"
+    }
+  ]
+}
