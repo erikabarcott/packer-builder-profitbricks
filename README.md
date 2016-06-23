@@ -2,7 +2,7 @@
 
 This builder plugin extends packer.io to support building images for ProfitBricks. 
 
-You can check out packer [here](https://packer.io).
+You can check out Packer [here](https://packer.io).
 
 
 ## Dependencies
@@ -13,12 +13,13 @@ You can check out packer [here](https://packer.io).
 
 ## Install Go
 
-Follow these instructions and install golang on your system:
+Follow these instructions to install Go(lang) on your system:
 * https://golang.org/doc/install
 
 ## Install Packer
 
-Follow instructions https://www.packer.io/intro/getting-started/setup.html
+Follow these instructions to install Packer: 
+* https://www.packer.io/intro/getting-started/setup.html
 
 ## Compile the plugin
 
@@ -31,17 +32,26 @@ cd $GOPATH/src/github.com/profitbricks/packer-builder-profitbricks
 make install
 ```
 
-If the build is successful, you should now have `packer-builder-profitbricks`
-binary in your `~/.packer.d/plugins` if you are using Linux or Mac or on Windows `%APPDATA%/packer.d/plugins` directory and you are
-ready to get going with packer.
+If the build is successful, you should now have the `packer-builder-profitbricks`
+binary in:
+
+* Linux/Mac: the `~/.packer.d/plugins` directory.
+* Windows: the `%APPDATA%/packer.d/plugins` directory.
+
+If this binary is in the right location, you are ready to get started with Packer.
 
 ## Download the plugin
 
-Alternatively you can download prebuilt binaries from https://github.com/profitbricks/packer-builder-profitbricks/releases/tag/v1.0.0. Once you have downloaded binary for your distribution. Place the binary to  `~/.packer.d/plugins` if you are using Linux or Mac or on Windows `%APPDATA%/packer.d/plugins` directory.
+Alternatively, you can download prebuilt binaries from https://github.com/profitbricks/packer-builder-profitbricks/releases/tag/v1.0.0. 
+
+After you have downloaded the binary for your operating system:
+
+* Linux/Mac: Place the binary in the  `~/.packer.d/plugins` directory.
+* Windows: Place the binary in the `%APPDATA%/packer.d/plugins` directory.
 
 ## Example
 
-Once you've setup the above, you are good to go with an example.
+Once you have set everything up, you are ready to start with an example.
 To get a quick start run:
 
 ```shell
@@ -69,13 +79,13 @@ To validate `config.json` run:
 packer validate config.json
 ```
 
-or if you want to get suggestions on how to fix your config run:
+Or if you want to get suggestions on how to fix your config, run:
 
 ```shell
 packer fix config.json
 ```
 
-To build a Profitbricks packer image run: 
+To build a Profitbricks Packer image run: 
 
 ```shell
 packer build config.json
